@@ -45,31 +45,52 @@
         
         <div class = "text"
         style = "display: flex;
-        flex-flow: column, wrap;
-        left: 50;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: end;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        border: solid;
+        border-color: transparent;
+        width: 500px;
+        align-items: center;
+        
+        
         ">
             <p style=
             "
             font-family: 'Courier New';
             color: white;
+            border: solid;
+            border-color: transparent;
+            
             ">
                 Hey! 👋 I'm
             </p>
 
             <p style=
             "
-            font-family: Helvetica;
+            font-family: Lucida Console;
             color: white;
-            font-size: 30px;
+            font-size: 50px;
+            margin-bottom: 0px;
+            margin:auto;
+            border: solid;
+            border-color: transparent;
             ">
                 Almat
             </p>
 
             <p style=
             "
-            font-family: Helvetica;
+            font-family: Lucida Console;
             color: white;
-            font-size: 30px;
+            font-size: 50px;
+            margin-top: 0px;
+            margin:auto;
+            border: solid;
+            border-color: transparent;
             ">
                 Zhezbayev
             </p>
@@ -80,6 +101,9 @@
             font-family: Lobster two;
             font-style: italic;
             color:#43feaf;
+            font-size:large;
+            border: solid;
+            border-color: transparent;
             ">
                 Software Engineer
             </p>
@@ -88,8 +112,12 @@
             "
             font-family: 'Courier New';
             color: white;
+            width: 350px;
+            border: solid;
+            border-color: transparent;
+            margin: auto;
             ">
-                I'm a sophomore student student at HKUST, studying Mathematics and Computer Science
+                Sophomore student at HKUST, studying Mathematics and Computer Science
             </p>
         </div>
     </body>
@@ -112,6 +140,8 @@
         border-radius: 20px;
         cursor: pointer;
         font-family: monospace;
+        transform: scale(1.1);
+        transition: 0.15s;
     }
 
     button:hover
@@ -134,13 +164,14 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 50px;
+        height: 70px;
         background-color: #262a33;
         display: flex;
         justify-content: space-between;
         border: none;
         border-color: white;
-
+        z-index: 1;
+        
     }
     
     .header .logo 
@@ -181,4 +212,3 @@
         border-color: transparent;
     }
 </style>
-
