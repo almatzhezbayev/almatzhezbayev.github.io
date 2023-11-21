@@ -1,37 +1,184 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Personal Blog</title>
-      </head> 
-   <body>
-      <header>   
-      <h1>Your Personal Blog</h1>
-      <nav>
-         <a href=”domain.tld/home”>Home</a>
-         <a href=”domain.tld/blog”>Blog</a>
-         <a href=”domain.tld/about”>About</a>
-      </nav>
-      </header>
-      <main>
-         <div class=”row">
-            <div class=”post-text-box”>
-               <h1>Newest Post</h1>
-               <section>
-                  <h1>First Post</h1>
-                  <p>The first post’s content</p>
-               </section>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap" rel="stylesheet">
+        <title>
+            Almat Zhezbayev
+        </title>
+    </head> 
+    <body style="
+    background-color:#262a33;
+    padding-top: 40px;
+    height: 3000px;
+    ">
+
+        <div class="header">
+
+            <div class="logo">
+                <button class = "logo2" style=
+                "font-size: 15px;">
+                    AZ
+                </button>
             </div>
-            <div class=”profile”>
-               <h1>About Me</h1>
-               <img src=”profile-picture.png”>
-               <p>About the author</p>
-            </div>  
-         </div>        
-      </main>
-      <footer>
-         <a href=”twitter.com/author”>Twitter</a>
-         <a href=”facebook.com/author”>Facebook</a>
-         <a href=”instagram.com/author”>Instagram</a>
-      </footer>
+
+            <div class="menu">
+                <button style=
+                "font-size: 15px ;">
+                    Home
+                </button>
+
+                <button style=
+                "font-size: 15px ;">
+                    About
+                </button>
+
+                <button style=
+                "font-size: 15px ;">
+                    Projects
+                </button>
+            </div>
+
+        </div>
+
+        
+        <div class = "text"
+        style = "display: flex;
+        flex-flow: column, wrap;
+        left: 50;
+        ">
+            <p style=
+            "
+            font-family: 'Courier New';
+            color: white;
+            ">
+                Hey! 👋 I'm
+            </p>
+
+            <p style=
+            "
+            font-family: Helvetica;
+            color: white;
+            font-size: 30px;
+            ">
+                Almat
+            </p>
+
+            <p style=
+            "
+            font-family: Helvetica;
+            color: white;
+            font-size: 30px;
+            ">
+                Zhezbayev
+            </p>
+            
+
+            <p style=
+            "
+            font-family: Lobster two;
+            font-style: italic;
+            color:#43feaf;
+            ">
+                Software Engineer
+            </p>
+
+            <p style=
+            "
+            font-family: 'Courier New';
+            color: white;
+            ">
+                I'm a sophomore student student at HKUST, studying Mathematics and Computer Science
+            </p>
+        </div>
     </body>
 </html>
+
+<style>
+    button
+    {
+        height: 35px;
+        width: 100px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: #262a33;
+        color: #526676;
+        border: solid;
+        border-color: transparent;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: monospace;
+    }
+
+    button:hover
+    {
+        border:solid;
+        border-radius: 20px;
+        color: white;
+    }
+
+    button:active
+    {
+        background-color: #43feaf;
+        color: #526676;
+        border-color: transparent;
+    }
+
+    .header 
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: #262a33;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        border-color: white;
+
+    }
+    
+    .header .logo 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header .menu 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo2
+    {
+        border: solid;
+        border-color: transparent;
+        border-radius: 2px;
+        padding: 5px;
+        height: 35px;
+        width: 35px;
+
+    }
+
+    .logo2:hover
+    {
+        border-color: white;
+        border-radius: 2px;
+    }
+
+    .logo2:active
+    {
+        border-color: transparent;
+    }
+</style>
+
