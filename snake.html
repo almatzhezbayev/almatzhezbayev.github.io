@@ -3,31 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport", content="width=device-width, initial-scale=1.0">
-        <title>Almat Zhezbayev</title>
-
+        <title>Snake</title>
+        <link rel="stylesheet" href="snake.css">
+        <script src="snake.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap" rel="stylesheet">
-    </head> 
-    
+    </head>
+
     <body style="
     background-color:#262a33;
     padding-top: 40px;
     
     ">
+        <h1>Snake</h1>
+        <div class = "divboard" style="border: solid;
+        border-color: white;">
+            <canvas id="board"></canvas>
+
+        </div>
+        
 
         <div class="header">
 
             <div class="logo">
-                <button onclick="window.location.reload()" class = "logo2" style=
+                <button onclick="window.location.href='index.html'" class = "logo2" style=
                 "font-size: 15px;">
                     AZ
                 </button>
             </div>
 
             <div class="menu">
-                <button onclick="window.location.reload()" style=
+                <button onclick="window.location.href='index.html'" style=
                 "font-size: 15px ;">
                     Home
                 </button>
@@ -37,92 +45,12 @@
                     About
                 </button>
 
-                <button onclick="window.location.href='snake.html'" style=
+                <button onclick="window.location.reload()" style=
                 "font-size: 15px ;">
                     Projects
                 </button>
             </div>
 
-        </div>
-
-        
-        <div class = "text"
-        style = "display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: end;
-        position: absolute;
-        left: 100px;
-        top: 200px;
-        border: solid;
-        border-color: transparent;
-        width: 500px;
-        align-items: center;
-        
-        
-        ">
-            <p style=
-            "
-            font-family: 'Courier New';
-            color: white;
-            border: solid;
-            border-color: transparent;
-            
-            ">
-                Hey! 👋 I'm
-            </p>
-
-            <p style=
-            "
-            font-family: Monaco;
-            color: white;
-            font-size: 50px;
-            margin-bottom: 0px;
-            margin:auto;
-            border: solid;
-            border-color: transparent;
-            ">
-                Almat
-            </p>
-
-            <p style=
-            "
-            font-family: Monaco;
-            color: white;
-            font-size: 50px;
-            margin-top: 0px;
-            margin:auto;
-            border: solid;
-            border-color: transparent;
-            ">
-                Zhezbayev
-            </p>
-            
-
-            <p style=
-            "
-            font-family: Lobster two;
-            font-style: italic;
-            color:#43feaf;
-            font-size:large;
-            border: solid;
-            border-color: transparent;
-            ">
-                Software Engineer
-            </p>
-
-            <p style=
-            "
-            font-family: 'Courier New';
-            color: white;
-            width: 350px;
-            border: solid;
-            border-color: transparent;
-            margin-left: 20px;
-
-            ">
-                Sophomore student at HKUST, studying Mathematics and Computer Science
-            </p>
         </div>
     </body>
 </html>
